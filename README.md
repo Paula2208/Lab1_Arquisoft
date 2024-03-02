@@ -8,6 +8,10 @@ To deploy both labs and see the complete result run
   cd swarch2024i_db/ && ./lab1.sh && cd ../swarch2024i_ms/ && ./lab2.sh && cd ..
 ```
 
+## HTTP requests
+
+Import [Lab 2.postman_collection.json](/Lab%202.postman_collection.json) to your postman as a collection to complete lab 2
+
 ## Support
 
 Assigment document: [l2.pdf]()
