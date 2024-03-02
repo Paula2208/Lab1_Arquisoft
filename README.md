@@ -1,21 +1,40 @@
+# Solution Labs #1 and #2
 
+## Deployment
+
+To deploy both labs and see the complete result run
+
+```bash
+  cd swarch2024i_db/ && ./lab1.sh && cd ../swarch2024i_ms/ && ./lab2.sh && cd ..
+```
+
+## Support
+
+Assigment document: [l2.pdf]()
+
+<br />
+<br />
+<br />
+<br />
+
+***
 # Laboratory #1
 
-Construcción de un primer componente de base de datos.
+Development of a first database component.
 
+**Type:** Database
 
-**Tipo:** Base de Datos
-
-**Nombre:** swarch2024i_db
+**Name:** swarch2024i_db
 
 **SGBD:** MySQL
 
-**PUERTO:** 3308 (Originalmente 3306)
+**PORT:** 3306
 
+## Requirements
 
+* Docker [downloaded](https://www.docker.com/products/docker-desktop/) and installed
 
-
-## Deployment
+## Deployment Lab 1
 
 To deploy this project run
 
@@ -23,3 +42,32 @@ To deploy this project run
   cd swarch2024i_db/ && ./lab1.sh && cd ..
 ```
 
+<br />
+<br />
+
+***
+# Laboratory #2
+
+Development of a second component for a distributed software system.
+
+**Type:** Logic (Microservice)
+
+**Name:** swarch2024i_ms
+
+**Programming Language:** Python
+
+**Framework**: Django
+
+**PORT:** 4000
+
+## Requirements
+* Lab 1 database deployed
+* Postman [downloaded](https://www.postman.com/downloads/) and installed. Or another preferred HTTP client.
+
+## Deployment Lab 2
+
+To deploy this project run
+
+```bash
+  cd swarch2024i_ms/ && ./lab2.sh && cd ..
+```

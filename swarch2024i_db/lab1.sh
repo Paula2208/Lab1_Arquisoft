@@ -12,9 +12,8 @@ then
 
     # Desplegar la base de datos
     echo "Step 2: Deploying database..."
-    docker run -d -t -i -p 3308:3308 --name swarch2024i_db swarch2024i_db
+    docker run -d -t -i -p 3306:3306 --name swarch2024i_db swarch2024i_db
 
-    # ¡Importante! --> Tuve que cambiar elpuerto porque tengo otra BD ejecutandose en el mismo puerto en mi compu :(
 fi
 
 if [ $? -eq 0 ];
