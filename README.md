@@ -14,7 +14,7 @@ Import [Lab 2.postman_collection.json](/Lab%202.postman_collection.json) to your
 
 ## Support
 
-Assigment document: [l2.pdf]()
+Assigment document: [l2.pdf](https://drive.google.com/file/d/1v6QEZYL366_5CP0WtWVU2jOygAArlgu6/view?usp=drive_link)
 
 <br />
 <br />
