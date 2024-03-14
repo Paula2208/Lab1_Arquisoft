@@ -75,3 +75,48 @@ To deploy this project run
 ```bash
   cd swarch2024i_ms/ && ./lab2.sh && cd ..
 ```
+
+***
+<br />
+<br />
+
+# Laboratory #3
+
+Development of an API Gateway and a Message Queue.
+
+### API Gateway
+
+**Type:** Logic (API Gateway) with GraphQL
+
+**Name:** swarch2024i_ag
+
+**Programming Language:** JavaScript
+
+**Framework**: Node.JS
+
+**PORT:** 5000
+
+### Message Queue
+
+<!-- **Type:** Message Queue
+
+**Name:** swarch2024i_ag
+
+**Programming Language:** JavaScript
+
+**Framework**: Node.JS
+
+**PORT:** 5000 -->
+
+## Requirements
+* Lab 1 database deployed
+* Lab 2 API deployed
+* RabbitMQ [installed](https://www.rabbitmq.com/tutorials/tutorial-one-python) and running on [localhost:5672](http://localhost:5672)
+
+## Deployment Lab 2
+
+To deploy this project run
+
+```bash
+  cd swarch2024i_ag/ && ./lab3.sh && cd ..
+```
