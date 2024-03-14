@@ -21,7 +21,7 @@ then
 
     # Acceder a la graphQL
     echo "Step 4: Starting browser"
-    start http://host:5000/graphiql
+    start http://localhost:5000/graphiql
     echo "Please, check your browser to login"
     echo ""
     echo ""

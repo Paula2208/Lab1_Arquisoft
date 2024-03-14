@@ -98,25 +98,49 @@ Development of an API Gateway and a Message Queue.
 
 ### Message Queue
 
-<!-- **Type:** Message Queue
+**Type:** Message Queue
 
-**Name:** swarch2024i_ag
+**Name:** swarch2024i_mq
 
-**Programming Language:** JavaScript
+**Programming Language:** Python
 
-**Framework**: Node.JS
+**Framework**: Pika (RabbitMQ)
 
-**PORT:** 5000 -->
+**PORT:** 5672
 
 ## Requirements
 * Lab 1 database deployed
 * Lab 2 API deployed
-* RabbitMQ [installed](https://www.rabbitmq.com/tutorials/tutorial-one-python) and running on [localhost:5672](http://localhost:5672)
+* Python [installed](https://www.python.org/downloads/)
 
-## Deployment Lab 2
+## Deployment Lab 3
 
 To deploy this project run
 
 ```bash
   cd swarch2024i_ag/ && ./lab3.sh && cd ..
+```
+
+To deploy message queue run
+
+```bash
+  cd swarch2024i_mq/ && ./message_queue.sh 
+```
+
+Then (in another terminal), start consumer
+
+```bash
+  cd swarch2024i_mq/ && ./consumer_queue.sh 
+```
+
+Then (in another terminal), list all queues
+
+```bash
+  cd swarch2024i_mq/ && ./list_queues.sh 
+```
+
+Then (in another terminal), start producer program
+
+```bash
+  cd swarch2024i_mq/ && ./producer_queue.sh
 ```
