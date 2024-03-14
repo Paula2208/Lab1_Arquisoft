@@ -1,6 +1,6 @@
 # latest RabbitMQ 3.13
-echo "Step 1: Install RabbitMQ..."
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management
+echo "Step 2: Install pika for python..."
+python -m pip install pika --upgrade
 
 if [ $? -eq 0 ];
 then
@@ -8,8 +8,9 @@ then
     echo ""
     echo ""
     
-    echo "Step 2: Install pika for python..."
-    python -m pip install pika --upgrade
+    echo "Step 1: Install RabbitMQ..."
+    docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management
+
     echo ""
     echo ""
     

@@ -88,7 +88,7 @@ Development of an API Gateway and a Message Queue.
 
 **Type:** Logic (API Gateway) with GraphQL
 
-**Name:** swarch2024i_ag
+**Name:** swarch2024i
 
 **Programming Language:** JavaScript
 
@@ -118,7 +118,7 @@ Development of an API Gateway and a Message Queue.
 To deploy this project run
 
 ```bash
-  cd swarch2024i_ag/ && ./lab3.sh && cd ..
+  cd swarch2024i/ && ./lab3.sh && cd ..
 ```
 
 To deploy message queue run
@@ -131,12 +131,6 @@ Then (in another terminal), start consumer
 
 ```bash
   cd swarch2024i_mq/ && ./consumer_queue.sh 
-```
-
-Then (in another terminal), list all queues
-
-```bash
-  cd swarch2024i_mq/ && ./list_queues.sh 
 ```
 
 Then (in another terminal), start producer program
