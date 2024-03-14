@@ -18,7 +18,7 @@ fi
 if [ $? -eq 0 ];
 then
     echo "Step 2 Completed"
-    echo "rabbitMQ runnign on http://localhost:5672"
+    echo "rabbitMQ running on http://localhost:5672"
     echo ""
     echo ""
     
