@@ -1,20 +1,57 @@
-# Solution Labs #1 and #2
+# Solution Labs #1, #2 and #3
 
 ## Deployment
 
-To deploy both labs and see the complete result run
+To deploy all labs and see the complete result follow:
+
+1. Deploy database
+```bash
+  cd swarch2024i_db/ && ./lab1.sh && cd ..
+```
+
+2. Deploy microservice
+```bash
+  cd swarch2024i_ms/ && ./lab2.sh && cd ..
+```
+
+3. In another terminal, deploy API Gateway
+```bash
+  cd swarch2024i/ && ./lab3.sh && cd ..
+```
+
+For message queue example (RabbitMQ):
+
+1. Install Pika (python) and RabbitMQ
 
 ```bash
-  cd swarch2024i_db/ && ./lab1.sh && cd ../swarch2024i_ms/ && ./lab2.sh && cd ..
+  cd swarch2024i_mq/ && ./message_queue.sh 
 ```
+
+2. In another terminal, start consumer
+
+```bash
+  cd swarch2024i_mq/ && ./consumer_queue.sh 
+```
+
+3. In another terminal, start producer program
+
+```bash
+  cd swarch2024i_mq/ && ./producer_queue.sh
+```
+
+## GraphQL Requests
+
+Running on API gateway server [http://localhost:5000/graphiql](http://localhost:5000/graphiql) make queries on file [GraphQL.txt](/GraphQL.txt)
 
 ## HTTP requests
 
-Import [Lab 2.postman_collection.json](/Lab%202.postman_collection.json) to your postman as a collection to complete lab 2
+Import [Lab 2.postman_collection.json](/Lab%202.postman_collection.json) to your postman as a collection to complete lab 2 using MS server [http://localhost:4000](http://localhost:4000)
 
 ## Support
 
-Assigment document: [l2.pdf](https://drive.google.com/file/d/1v6QEZYL366_5CP0WtWVU2jOygAArlgu6/view?usp=drive_link)
+Assigment document lab 3: [l3.pdf](https://drive.google.com/file/d/1hAbIVPdQn-TlPkcVhHESQ4NPapvaVgO7/view?usp=drive_link)
+
+Assigment document lab 2: [l2.pdf](https://drive.google.com/file/d/1v6QEZYL366_5CP0WtWVU2jOygAArlgu6/view?usp=drive_link)
 
 <br />
 <br />

@@ -1,0 +1,82 @@
+1 - Create Category
+mutation {
+ createCategory(category: {
+ name: "Cat swarch2024i",
+ description: "Descripción - Categoría Swarch 2024i"
+ }) {
+ name
+ }
+}
+
+2 - Update Category
+mutation {
+ updateCategory(id: 1, category: {
+ name: "Cat new2024i"
+ description: "Nueva Descripción - Categoría Swarch 2024i"
+ }) {
+ id
+ name
+ description
+ }
+}
+
+3A - Create Several Categories
+mutation {
+ createCategory(category: {
+ name: "Cat2 2024i",
+ description: "Descripción2 - 2024i"
+ }) {
+ name
+ }
+}
+
+mutation {
+ createCategory(category: {
+ name: "Cat3 2024i",
+ description: "Descripción3 - 2024i"
+ }) {
+ name
+ }
+}
+
+mutation {
+ createCategory(category: {
+ name: "Cat4 2024i",
+ description: "Descripción4 - 2024i"
+ }) {
+ name
+ }
+}
+
+mutation {
+ createCategory(category: {
+ name: "Cat5 2024i",
+ description: "Descripción5 - 2024i"
+ }) {
+ name
+ }
+}
+
+mutation {
+ createCategory(category: {
+ name: "Cat6 2024i",
+ description: "Descripción6 - 2024i"
+ }) {
+ name
+ }
+}
+
+3B - List all the categories names
+
+4 - Get category given an id
+query {
+ categoryById(id: 1) {
+ id
+ name
+ }
+}
+
+5 - Delete Category
+mutation {
+ deleteCategory(id: 1)
+}

@@ -13,16 +13,5 @@ then
 
 fi
 
-if [ $? -eq 0 ];
-then
-    echo "Step 2 Completed"
-    echo ""
-    echo ""
 
-    # Acceder a la graphQL
-    echo "Step 4: Starting browser"
-    start http://localhost:5000/graphiql
-    echo "Please, check your browser to login"
-    echo ""
-    echo ""
-fi
+### See http://localhost:5000/graphiql to access 
