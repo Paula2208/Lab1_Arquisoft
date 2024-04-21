@@ -1,6 +1,6 @@
 # Solution Labs #1, #2 and #3
 
-## Deployment
+## Deployment and running
 
 To deploy all labs and see the complete result follow:
 
@@ -18,6 +18,18 @@ To deploy all labs and see the complete result follow:
 ```bash
   cd swarch2024i/ && ./lab3.sh && cd ..
 ```
+
+4. In another terminal, deploy LDAP
+```bash
+  cd swarch2024i_ldap/ && ./lab5.sh && cd ..  
+```
+
+5. In another terminal, deploy proxy
+```bash
+  cd swarch2024i_proxy/ && ./lab5.sh && cd ..
+```
+
+6. Go to graphql with proxy terminal in [http://localhost/graphiql](http://localhost/graphiql)
 
 For message queue example (RabbitMQ):
 
@@ -39,19 +51,25 @@ For message queue example (RabbitMQ):
   cd swarch2024i_mq/ && ./producer_queue.sh
 ```
 
-## GraphQL Requests
+## Support
+
+Assigment document lab 5: [l5.pdf](https://drive.google.com/file/d/1uFOcQqnn0QmPiPCYwZzWH0u8glrdT3Ys/view?usp=sharing)
+
+Assigment document lab 3: [l3.pdf](https://drive.google.com/file/d/1hAbIVPdQn-TlPkcVhHESQ4NPapvaVgO7/view?usp=drive_link)
+
+Assigment document lab 2: [l2.pdf](https://drive.google.com/file/d/1v6QEZYL366_5CP0WtWVU2jOygAArlgu6/view?usp=drive_link)
+
+## GraphQL Requests (With proxy)
+
+Running on API gateway server [http://localhost/graphiql](http://localhost/graphiql) make queries on file [GraphQL.txt](/GraphQL.txt)
+
+## GraphQL Requests (No proxy)
 
 Running on API gateway server [http://localhost:5000/graphiql](http://localhost:5000/graphiql) make queries on file [GraphQL.txt](/GraphQL.txt)
 
 ## HTTP requests
 
 Import [Lab 2.postman_collection.json](/Lab%202.postman_collection.json) to your postman as a collection to complete lab 2 using MS server [http://localhost:4000](http://localhost:4000)
-
-## Support
-
-Assigment document lab 3: [l3.pdf](https://drive.google.com/file/d/1hAbIVPdQn-TlPkcVhHESQ4NPapvaVgO7/view?usp=drive_link)
-
-Assigment document lab 2: [l2.pdf](https://drive.google.com/file/d/1v6QEZYL366_5CP0WtWVU2jOygAArlgu6/view?usp=drive_link)
 
 <br />
 <br />

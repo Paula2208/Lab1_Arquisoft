@@ -67,6 +67,11 @@ mutation {
 }
 
 3B - List all the categories names
+query {
+ allCategories {
+ name
+ }
+}
 
 4 - Get category given an id
 query {
